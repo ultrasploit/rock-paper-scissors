@@ -1,0 +1,80 @@
+/* The light & the dark theme */
+:root {
+    --primary-color: #F9FAFB;
+    --secondary-color: #FFFFFF;
+
+    --primary-text: #111827;
+    --secondary-text: #4B5563;
+
+    --accent-color: #3B82F6;
+    --border-color: #E5E7EB;
+
+    --daccet: #3B82F6;
+    
+}   body.__dark_mode {
+    --primary-color: #111111;
+    --secondary-color: #151515;
+
+    --border-color: #191919;
+    --daccet: #FFFFFF;
+
+    --primary-text: #ffffff;
+}
+
+/* The global styles across the application. */
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    /* Google Fonts */
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+
+    /* Setting transitions */
+    transition: .3s ease-out;
+
+}   *::selection {
+    background: var(--border-color);
+    color: rgba(59, 131, 246, 0.75);
+}
+
+/* Theme toggle button */
+.__theme_toggle {
+    cursor: pointer;
+    user-select: none;
+
+    /* Position */
+    position: fixed;
+    z-index: 100;
+
+    top: 5px;
+    right: 5px;
+
+    /* Sizing */
+    width: 40px;
+    height: auto;
+
+    aspect-ratio: 1/1;
+    overflow: hidden;
+
+    background-color: #111111;
+    border-radius: 50%;
+
+    padding: 10px;
+
+}   .__theme_toggle img {
+    aspect-ratio: 1/1;
+    width: 100%;
+
+}   .__theme_toggle[current-theme="dark"] {
+    background-color: #FFFFFF;
+
+}   .__theme_toggle[current-theme="dark"] img.dark {
+    display: none;
+
+}

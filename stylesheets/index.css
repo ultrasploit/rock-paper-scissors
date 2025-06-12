@@ -1,0 +1,219 @@
+body {
+    width: 100%;
+    height: 100dvh;
+
+    padding: 30px;
+
+    background: var(--primary-color);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    
+    user-select: none;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    background: var(--secondary-color);
+    gap: 10px;
+
+    padding: 30px;
+    border-radius: 5px;
+
+    box-shadow: 8px 8px 5px var(--border-color);
+
+}   .container h1 {
+    font-size: 32px;
+    color: var(--accent-color);
+    text-align: center;
+
+    margin-bottom: 20px;
+
+}   .container .board {
+    width: 100%;
+    height: auto;
+
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+}   .container .board .player {
+    width: 50%;
+    height: auto;
+
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--border-color);
+
+}   .container .board .player h2 {
+    width: 100%;
+    font-size: 14px;
+
+    text-align: center;
+    color: var(--primary-text);
+
+}   .container .board .player .move {
+    width: 100%;
+    height: auto;
+
+    text-align: center;
+    font-size: 50px;
+
+    display: block;
+
+}   .container .board .player .wins {
+    width: 100%;
+    height: auto;
+
+    text-align: center;
+    font-size: 15px;
+
+    color: var(--primary-text);
+    display: block;
+
+}   .container .choice {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-content: inherit;
+    
+    gap: 5px;
+
+}   .container button {
+    border: none;
+    outline: none;
+
+    background: var(--accent-color);
+    flex-grow: 1;
+    
+    padding: 15px;
+    border-radius: 5px;
+
+    font-size: 35px;
+    cursor: pointer;
+
+}   .container .choice button:hover {
+    box-shadow: inset 15px 15px 30px var(--secondary-color),
+                inset -15px -15px 30px var(--secondary-color);
+    
+    background-color: rgba(59, 131, 246, 0.8);
+    color: var(--daccet);
+
+}   .container .result {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    padding: 5px;
+    
+    border-radius: 5px;
+    background: var(--border-color);
+
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}   .container .result[result="win"] {
+    background: green;
+
+}   .container .result[result="lose"] {
+    background: rgba(255, 0, 0, 0.4);
+
+}   .container .result[result=""] {
+    padding: 0;
+    height: 0;
+
+}   .container .reset {
+    width: 100%;
+    height: auto;
+
+    padding: 5px;
+    font-size: 20px;
+
+    color: #FFFFFF;
+    background: red;
+
+}   .container .reset:hover {
+    background: rgba(255, 0, 0, 0.5);
+
+}   .container .display {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+}   .container .display div {
+    width: 33.33%;
+    background: var(--border-color);
+    color: var(--primary-text);
+
+    border-radius: 5px;
+    padding: 5px;
+    
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+}   .container .display div span {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 14px;
+
+}   .container .display div p {
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+}
+
+.break {
+    width: 100%;
+    height: .5px;
+
+    border-radius: 5px;
+
+    background-color: var(--primary-text);
+    opacity: .2;
+}
+
+@media (max-width: 425px) {
+    .container h1 {
+        font-size: 25px;
+    }
+}

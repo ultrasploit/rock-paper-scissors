@@ -1,0 +1,22 @@
+{
+    "name": "Rock Paper Scissors Game",
+    "short_name": "RPS Game",
+    "description": "A fun and interactive Rock Paper Scissors game. Challenge the computer and test your luck!",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#000000",
+    "theme_color": "#0A74DA",
+    "icons": [
+        {
+            "src": "assets/logo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

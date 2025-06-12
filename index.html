@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+
+    <!-- Manifest -->
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <link rel="icon" href="./assets/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="./assets/logo.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./stylesheets/global.css">
+    <link rel="stylesheet" href="./stylesheets/index.css">
+
+    <!-- JavaScripts -->
+    <script src="./javascripts/darkmode.js" defer></script>
+    <script src="./javascripts/index.js" defer></script>
+</head>
+<body>
+    <!-- The dark mode button -->
+    <div class="__theme_toggle" current-theme="light">
+        <img src="./assets/dark.png" class="dark" alt="Dark Mode" draggable="false">
+        <img src="./assets/light.png" class="light" style="filter: invert(1);" alt="Light Mode" draggable="false">
+    </div>
+
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+
+        <div class="display">
+            <div class="wins">
+                <span>0</span>
+                <p>WINS</p>
+            </div>
+            <div class="ties">
+                <span>0</span>
+                <p>TIES</p>
+            </div>
+            <div class="lose">
+                <span>0</span>
+                <p>LOSES</p>
+            </div>
+        </div>
+
+        <div class="board">
+            <div class="player human">
+                <span class="move"></span>
+                <span class="wins">0</span>
+                <h2>You</h2>
+            </div>
+
+            <div class="player computer">
+                <span class="move"></span>
+                <span class="wins">0</span>
+                <h2>Computer</h2>
+            </div>
+        </div>
+
+        <p class="result" result="">
+
+        </p>
+        
+        <div class="break"></div>
+
+        <div class="choice">
+            <button onclick="play('rock');">👊</button>
+            <button onclick="play('paper');">🖐️</button>
+            <button onclick="play('scissor');">✌️</button>
+        </div>
+
+        <button class="reset" onclick="reset();">Reset</button>
+    </div>
+</body>
+</html>
