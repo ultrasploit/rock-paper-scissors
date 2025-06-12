@@ -4,6 +4,8 @@ A fun, lightweight **Rock Paper Scissors** game built with **HTML**, **CSS**, an
 
 ---
 
+**🔗 Live Demo:** [https://ultrasploit.github.io/rock-paper-scissors/](https://ultrasploit.github.io/rock-paper-scissors/)
+
 ## ✨ Features
 
 - 👤 **Player vs Computer** gameplay
@@ -89,7 +91,7 @@ Contributions are welcome! If you'd like to fix a bug or suggest a new feature, 
 
 ## 🧑‍💻 Developer
 
-Made with ❤️ for **BITS'25** by [Your Developer Name or Handle]
+Made with ❤️ for **BITS'25** by ultrasploit
 
 ---
 
