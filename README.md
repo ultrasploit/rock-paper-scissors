@@ -60,21 +60,6 @@ You should also include a valid `service-worker.js` to enable offline support an
 
 ---
 
-## 📂 Project Structure
-
-```
-📁 rock-paper-scissors/
-├── index.html
-├── style.css
-├── script.js
-├── manifest.json
-├── service-worker.js
-└── assets/
-    └── logo.jpg
-```
-
----
-
 ## 🚰 Technologies Used
 
 - HTML5
