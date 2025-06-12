@@ -41,21 +41,28 @@ This app supports Progressive Web App installation. Here's the default `manifest
 
 ```json
 {
-  "name": "Rock Paper Scissors",
-  "short_name": "RPS",
-  "description": "A fun and simple Rock Paper Scissors game",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#0A74DA",
-  "icons": [
-    {
-      "src": "assets/logo.jpg",
-      "sizes": "1024x1024",
-      "type": "image/png"
-    }
-  ]
+    "name": "Rock Paper Scissors Game",
+    "short_name": "RPS Game",
+    "description": "A fun and interactive Rock Paper Scissors game. Challenge the computer and test your luck!",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#000000",
+    "theme_color": "#0A74DA",
+    "icons": [
+        {
+            "src": "assets/logo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
 }
+
 ```
 
 You should also include a valid `service-worker.js` to enable offline support and caching.
